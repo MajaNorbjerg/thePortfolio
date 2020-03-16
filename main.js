@@ -33,13 +33,13 @@ _spaService.init();
 // _sofaService.animateLines('sign');
 
 // _bigFrame.calcBigFrame();
-_sofaService.animateLines('sofa');
-_sofaService.animateLines('table');
-_sofaService.animateLines('pillow');
+// _sofaService.animateLines('sofa');
+// _sofaService.animateLines('table');
+// _sofaService.animateLines('pillow');
 
 
-_lampService.animateLines();
-_sofaService.startFirstVideo();
+// _lampService.animateLines();
+// _sofaService.startFirstVideo();
 _frameService.sameHightAsWidth();
 
 
@@ -55,3 +55,5 @@ window.sameHightAsWidth = () => _frameService.sameHightAsWidth();
 window.calcBigFrame = () => _bigFrame.calcBigFrame();
 window.highlightProject = (anElement) => _projectsService.highlightProject(anElement);
 window.noHighlightProject = (anElement) => _projectsService.noHighlightProject(anElement);
+window.showModal = (projectId) => _projectsService.showModal(projectId);
+window.noMoreModal = () => _projectsService.noMoreModal()

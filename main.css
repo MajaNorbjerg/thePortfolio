@@ -683,6 +683,17 @@ to{transform: scale(1.2);}
   max-width: 100%;
 }
 
+.modal{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: darkviolet;
+  z-index: 999999;
+}
+
 
 @media only screen and (min-width: 645px) {
   #home {

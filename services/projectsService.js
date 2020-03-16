@@ -29,6 +29,14 @@ class ProjectsService {
         let text = textBox.getElementsByTagName('P')[0];
         text.style.visibility = 'hidden';
     }
+
+    showModal(projectId){
+        document.getElementsByClassName('modal')[0].style.display = 'block';
+    }
+
+    noMoreModal(){
+        document.getElementsByClassName('modal')[0].style.display = 'none';
+    }
 }
 let _projectsService = new ProjectsService();
 export default _projectsService;
