@@ -1,3 +1,4 @@
+import _frameService from "./frameService.js"
 import _sofaService from "./sofaService.js"
 import _lampService from "./lampService.js"
 class SpaService {
@@ -26,12 +27,14 @@ class SpaService {
 
     if (pageId === 'home') {
       document.querySelector('#signText').innerHTML = /*html*/ `<p>At</p> <h1>Majas Livingroom</h1>`
+      _frameService.sameHightAsWidth();
       _sofaService.animateLines('sofa');
       _sofaService.animateLines('table');
       _sofaService.animateLines('pillow');
 
       _lampService.animateLines();
       _sofaService.startFirstVideo();
+
 
     } else {
       let signAndText = document.querySelector('#signText');
