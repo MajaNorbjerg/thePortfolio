@@ -63,6 +63,7 @@ class LampService {
             bulbSpaces[i].style.fill = 'rgba(250, 225, 81, 0.288)';
         }
         lamp[`${number}`].getElementsByClassName('lampFilament')[0].style.fill = 'rgb(250, 250, 104)';
+        lamp[`${number}`].getElementsByClassName('lampFilament')[0].style.stroke = 'rgb(250, 250, 104)';
     }
 
     nolight(number) {
@@ -78,6 +79,7 @@ class LampService {
             bulbSpaces[i].style.fill = 'none';
         }
         lamp[`${number}`].getElementsByClassName('lampFilament')[0].style.fill = '#333';
+
     }
 
 

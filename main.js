@@ -55,5 +55,5 @@ window.sameHightAsWidth = () => _frameService.sameHightAsWidth();
 window.calcBigFrame = () => _bigFrame.calcBigFrame();
 window.highlightProject = (anElement) => _projectsService.highlightProject(anElement);
 window.noHighlightProject = (anElement) => _projectsService.noHighlightProject(anElement);
-window.showModal = (projectId) => _projectsService.showModal(projectId);
+window.showModal = (project, projectId) => _projectsService.showModal(project, projectId);
 window.noMoreModal = () => _projectsService.noMoreModal()

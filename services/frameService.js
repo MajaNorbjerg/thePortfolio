@@ -13,7 +13,7 @@ class FrameService {
             frame.style.height = `${width}px`;
         }
 
-        _bigFrame.calcBigFrame()
+        // _bigFrame.calcBigFrame()
 
 
     }

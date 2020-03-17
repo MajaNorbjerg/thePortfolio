@@ -29,7 +29,7 @@ class SpaService {
       _sofaService.animateLines('sofa');
       _sofaService.animateLines('table');
       _sofaService.animateLines('pillow');
-            
+
       _lampService.animateLines();
       _sofaService.startFirstVideo();
 
@@ -68,18 +68,6 @@ class SpaService {
       page = window.location.hash.slice(1);
     }
 
-    // if (window.location.hash === '#home') {
-    //   document.querySelector('#signText').innerHTML = /*html*/ `<p>At</p> <h1>Majas Livingroom</h1>`
-    // } else {
-    //   let signAndText = document.querySelector('#signText');
-
-    //   signAndText.innerHTML = /*html*/ `<p>Back to</p> <h1>Livingroom</h1>`;
-    //   // signAndText.style.animation = 'fadeIn 8s';
-    //   signAndText.style.cursor = "pointer";
-
-
-
-    // }
 
     this.showPage(page);
   }

@@ -60,19 +60,17 @@ class BigFrame {
 
     async calcBigFrame() {
 
-
+        this.border = window.innerWidth * 0.015;
 
         let contentWidth = window.innerWidth - (this.border * 2);
         let contentHeight = window.innerHeight - (this.border * 2);
-        let start = 0;
-        // let end = 100;
-        // window.innerWidth - section.offsetWidth
 
-        // let htmlWidth = document.querySelector('#html').offsetWidth;
-        // let htmlHeight = document.querySelector('#html').offsetWidth;
+        // console.log(contentWidth, contentHeight)
+        let start = 0;
 
         let windowWidth = window.innerWidth;
         let windowHeight = window.innerHeight;
+        // console.log(windowWidth, windowHeight)
 
         // console.log(htmlWidth, htmlHeight, window.innerWidth)
 
@@ -88,6 +86,7 @@ class BigFrame {
         let yp3 = yp2 + contentHeight;
         let yp4 = yp3 + this.border;
 
+
         await this.template(xp1, xp2, xp3, xp4, yp1, yp2, yp3, yp4, contentWidth, contentHeight, windowWidth, windowHeight);
 
         let frames = document.getElementsByClassName('bigFrame');
@@ -99,28 +98,28 @@ class BigFrame {
 
     setSectionMargin() {
         let pages = document.getElementsByClassName('page');
-        console.log(pages);
+        // console.log(pages);
 
         for (const page of pages) {
             let id = page.getAttribute('id');
-            console.log(id)
+            // console.log(id)
             if (id !== 'home') {
                 let persentage = 0.75;
                 let contentWidth = (window.innerWidth - (this.border * 2)) * persentage;
                 // let contentHeight = (window.innerHeight - (this.border * 2));
-       
+
                 page.style.width = `${contentWidth}px`;
-                console.log(contentWidth)
-                
+                // console.log(contentWidth)
 
-                let contentPadding = (window.innerWidth - contentWidth - (this.border*2))/2;
-              
 
-                
+                let contentPadding = (window.innerWidth - contentWidth - (this.border * 2)) / 2;
+
+
+
                 // page.style.width = `50%`;
                 page.style.margin = `0 auto`;
                 page.style.padding = `${this.border}px ${contentPadding}px`;
-                page.style.background = 'rgb(252, 233, 170)';
+                page.style.background = 'var(--colorFrameFill)';
 
             }
 

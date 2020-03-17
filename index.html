@@ -3,16 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SPA Template Module Pages</title>
+  <title>Portfolio | Maja Nørbjerg</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Single Page Application">
-  <meta name="author" content="Rasmus Cederdorff">
+  <meta name="author" content="Maja Nørbjerg Jensen">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 </head>
 
-<body id='body' onhashchange="pageChange()" onresize="sameHightAsWidth()">
+<body id='body' onhashchange="pageChange()" onresize="sameHightAsWidth(); calcBigFrame()">
   <main id="app"></main>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+            
   <!-- main js file -->
   <script src="main.js" type="module"></script>
 </body>
